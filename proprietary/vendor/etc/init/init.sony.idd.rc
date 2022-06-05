@@ -1,10 +1,8 @@
-# Copyright (c) 2018 Sony Mobile Communications Inc.
+# Copyright 2018 Sony Corporation
 #
 on fs
     # early option is required
     # because mount_all w/o option will handle encryption related code.
-    mount_all /vendor/etc/idd.fstab --early
-    # When partition formatted, mount command is required twice.
     mount_all /vendor/etc/idd.fstab --early
 
     # prepare idd partition
@@ -17,7 +15,7 @@ on fs
     mkdir /dev/socket/idd 0711 oem_2987 oem_2987
 
     # Make fsck directory for fsck report.
-    mkdir /mnt/idd/fsck 0770 root system
+    mkdir /mnt/idd/fsck 0770 root oem_2987
 
     # prepare rca partition
     restorecon_recursive /mnt/rca
@@ -30,5 +28,5 @@ on fs
 service iddd /vendor/bin/iddd
     class core
     user oem_2987
-    group oem_2987 log inet oem_2993
+    group oem_2987 log inet oem_2993 system
     writepid /dev/cpuset/system-background/tasks

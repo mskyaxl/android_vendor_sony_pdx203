@@ -101,7 +101,7 @@
         "data": "7000"
       },
       "smudge_low_threshold":{ "type": "int", "ver": "0",
-        "data": "1600"
+        "data": "1200"
       },
       "smudge_high_threshold":{ "type": "int", "ver": "0",
         "data": "1800"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!--
-/* Copyright (c) 2019, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -50,23 +50,160 @@
             Id="0x00001301" Enable="true" Target="kona"
             Resources=""/>
 
+        <!-- same settings for all the VR power levels intentionally -->
+
         <!-- qvr level cpu1 gpu1 -->
         <!-- B CPU - Cluster min freq ~.864 Ghz -->
-        <!-- B CPU - Cluster max freq ~.2.016 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
         <!-- L CPU - Cluster min freq ~.576 Ghz -->
-        <!-- L CPU - Cluster max freq ~1.267 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
         <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
         <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
-        <!-- GPU - min pwrlevel 5 (freq 215 Mhz) -->
-        <!-- GPU - max pwrlevel 0 (freq 600 Mhz) -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
         <!-- Min Big CPUs 3 -->
         <!-- Min Prime CPUs 1 -->
         <!-- Idefinite Duration -->
         <Config
             Id="0x0000130A" Enable="true" Target="kona" Timeout="0"
-            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240,
-            0x40804100, 0x4F3, 0x40800200, 0x3AD, 0x40804200, 0x806, 0x42804000, 0x3,
-            0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu1 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130B" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu1 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130C" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130D" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130E" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130F" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001310" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001311" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001312" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
 
         <!--camera general-->
         <!--CPU-LLC BWMON - Set sample_ms 16 -->
@@ -112,20 +249,20 @@
         <!-- SoMC Camera High -->
         <!-- MPCTLV3_LLCBW_HWMON_HYST_OPT  := 0 (Disable) -->
         <!-- MPCTLV3_LLCBW_HWMON_SAMPLE_MS := 0xA (10msec) -->
-        <!-- MPCTLV3_LLCC_DDR_BW_MIN_FREQ  := 0x26 (3879MHz) -->
+        <!-- MPCTLV3_LLCBW_HWMON_MIN_FREQ  := 0x26 (3879MHz) -->
         <!-- MPCTLV3_CPUBW_HWMON_HYST_OPT  := 0 (Disable) -->
         <!-- MPCTLV3_CPUBW_HWMON_IO_PERCENT:= 0x50 (80%) -->
         <!-- MPCTLV3_CPUBW_HWMON_SAMPLE_MS := 0x10 (16msec) -->
-        <!-- MPCTLV3_CPU_LLCC_BW_MIN_FREQ  := 0x5B (9155MHz) -->
+        <!-- MPCTLV3_CPUBW_HWMON_MIN_FREQ  := 0x5B (9155MHz) -->
         <Config
             Id="0x00001502" Enable="true" Timeout="0" Target="kona"
             Resources="0x43008000, 0x00000000,
                        0x4300C000, 0x0000000A,
-                       0x43010000, 0x00000026,
+                       0x43000000, 0x00000026,
                        0x4180C000, 0x00000000,
                        0x41808000, 0x00000050,
                        0x41820000, 0x00000010,
-                       0x41828000, 0x0000005B"/>
+                       0x41800000, 0x0000005B"/>
     </Powerhint>
 </HintConfigs>
 
